@@ -1,0 +1,312 @@
+/* 
+
+
+
+
+.table-container {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  width: 300px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #222;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+
+
+ */
+
+/* ========================================
+   USER MANAGEMENT CONTAINER
+======================================== */
+
+.table-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 25px;
+  box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   HEADING
+======================================== */
+
+.table-container h2 {
+  margin: 0 0 25px;
+
+  font-size: 26px;
+  font-weight: 600;
+
+  color: #222;
+}
+
+
+/* ========================================
+   SEARCH INPUT
+======================================== */
+
+.table-container .search-input {
+  width: 320px;
+  height: 42px;
+
+  padding: 0 14px;
+  margin-bottom: 25px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  outline: none;
+
+  font-size: 15px;
+  color: #333;
+
+  transition: 0.2s ease;
+}
+
+.table-container .search-input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ========================================
+   TABLE
+======================================== */
+
+.table-container table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+  overflow: hidden;
+}
+
+
+/* ========================================
+   TABLE HEADER + DATA
+======================================== */
+
+.table-container th,
+.table-container td {
+  padding: 13px 12px;
+
+  border: 1px solid #ddd;
+
+  text-align: center;
+}
+
+
+/* ========================================
+   TABLE HEADER
+======================================== */
+
+.table-container th {
+  background-color: #222;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   TABLE DATA
+======================================== */
+
+.table-container td {
+  color: #333;
+
+  font-size: 14px;
+
+  background-color: #ffffff;
+}
+
+
+/* ========================================
+   TABLE ROW HOVER
+======================================== */
+
+.table-container tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.table-container tbody tr:hover td {
+  background-color: #f5f5f5;
+}
+
+
+/* ========================================
+   DELETE BUTTON
+======================================== */
+
+.table-container .delete-btn {
+  background-color: #ff4d4d;
+
+  color: #ffffff;
+
+  border: none;
+
+  padding: 7px 14px;
+
+  border-radius: 5px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+
+/* DELETE HOVER */
+
+.table-container .delete-btn:hover {
+  background-color: #cc0000;
+
+  transform: translateY(-1px);
+}
+
+
+/* DELETE ACTIVE */
+
+.table-container .delete-btn:active {
+  transform: translateY(0);
+}
+
+
+/* ========================================
+   LOADING
+======================================== */
+
+.table-container h3 {
+  margin-top: 30px;
+
+  color: #555;
+
+  font-size: 18px;
+}
+
+
+/* ========================================
+   NO USERS FOUND
+======================================== */
+
+.table-container td[colspan] {
+  padding: 25px;
+
+  color: #777;
+
+  font-size: 15px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .table-container {
+    width: 95%;
+
+    padding: 20px;
+
+    overflow-x: auto;
+  }
+
+  .table-container table {
+    min-width: 750px;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .table-container {
+    width: 95%;
+
+    margin: 20px auto;
+
+    padding: 15px;
+  }
+
+  .table-container h2 {
+    font-size: 22px;
+  }
+
+  .table-container .search-input {
+    width: 100%;
+
+    max-width: 320px;
+  }
+
+  .table-container table {
+    min-width: 750px;
+  }
+}

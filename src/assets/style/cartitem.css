@@ -1,0 +1,441 @@
+/* .cart_container{
+width:90%;
+margin:40px auto;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.cart_container h2{
+margin-bottom:20px;
+}
+
+.cart_table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.cart_table th,
+.cart_table td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+.cart_table img{
+width:60px;
+border-radius:6px;
+}
+
+.qty_btn{
+padding:5px 12px;
+border:none;
+background:#1877f2;
+color:white;
+cursor:pointer;
+border-radius:4px;
+}
+
+.qty_text{
+margin:0 10px;
+font-weight:bold;
+}
+
+.remove_btn{
+padding:6px 12px;
+background:red;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:4px;
+}
+
+.cart_total{
+margin-top:20px;
+text-align:right;
+font-size:20px;
+font-weight:bold;
+}
+
+.empty_cart{
+text-align:center;
+font-size:18px;
+padding:40px;
+} */
+
+
+/* =====================================
+   MAIN CART CONTAINER
+===================================== */
+
+.cart_container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 40px auto;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================
+   CART HEADING
+===================================== */
+
+.cart_heading {
+  display: block;
+
+  width: 100%;
+
+  margin: 0 0 30px 0;
+
+  padding: 18px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+  background-color: #f3f4f6;
+
+  border-radius: 8px;
+}
+
+
+/* =====================================
+   CART TABLE
+===================================== */
+
+.cart_table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background-color: #ffffff;
+
+  border: 1px solid #d1d5db;
+}
+
+
+/* =====================================
+   TABLE HEADER
+===================================== */
+
+.cart_table thead th {
+  padding: 15px 12px;
+
+  background-color: #111827;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  text-align: center;
+
+  border: 1px solid #374151;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================
+   TABLE DATA
+===================================== */
+
+.cart_table tbody td {
+  padding: 15px 12px;
+
+  background-color: #ffffff;
+
+  color: #111827;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  text-align: center;
+
+  border: 1px solid #e5e7eb;
+
+  vertical-align: middle;
+}
+
+
+/* =====================================
+   PRODUCT TITLE
+===================================== */
+
+.product_title {
+  min-width: 200px;
+
+  color: #111827 !important;
+
+  font-size: 16px !important;
+
+  font-weight: 600 !important;
+}
+
+
+/* =====================================
+   PRICE
+===================================== */
+
+.price {
+  color: #111827 !important;
+
+  font-size: 16px !important;
+
+  font-weight: 600 !important;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================
+   TABLE ROW HOVER
+===================================== */
+
+.cart_table tbody tr:hover td {
+  background-color: #f9fafb;
+}
+
+
+/* =====================================
+   PRODUCT IMAGE
+===================================== */
+
+.product_image {
+  display: block;
+
+  width: 70px;
+
+  height: 70px;
+
+  margin: auto;
+
+  padding: 5px;
+
+  box-sizing: border-box;
+
+  object-fit: contain;
+
+  background-color: #ffffff;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+}
+
+
+/* =====================================
+   QUANTITY BOX
+===================================== */
+
+.quantity_box {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+
+/* =====================================
+   PLUS / MINUS BUTTON
+===================================== */
+
+.qty_btn {
+  width: 32px;
+
+  height: 32px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background-color: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.qty_btn:hover {
+  background-color: #1d4ed8;
+}
+
+
+/* =====================================
+   QUANTITY NUMBER
+===================================== */
+
+.qty_text {
+  display: inline-block;
+
+  width: 30px;
+
+  color: #111827;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+
+/* =====================================
+   REMOVE BUTTON
+===================================== */
+
+.remove_btn {
+  padding: 8px 16px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background-color: #ef4444;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.remove_btn:hover {
+  background-color: #dc2626;
+}
+
+
+/* =====================================
+   GRAND TOTAL
+===================================== */
+
+.cart_total {
+  margin-top: 25px;
+
+  padding: 18px 25px;
+
+  text-align: right;
+
+  background-color: #f3f4f6;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+}
+
+
+.cart_total h3 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================
+   EMPTY CART
+===================================== */
+
+.empty_cart {
+  padding: 50px;
+
+  margin: 0;
+
+  text-align: center;
+
+  color: #4b5563;
+
+  font-size: 20px;
+
+  font-weight: 500;
+
+  background-color: #f9fafb;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 8px;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+  .cart_container {
+    width: 95%;
+
+    padding: 20px;
+
+    overflow-x: auto;
+  }
+
+  .cart_table {
+    min-width: 850px;
+  }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+  .cart_container {
+    width: 95%;
+
+    margin: 20px auto;
+
+    padding: 15px;
+  }
+
+  .cart_heading {
+    font-size: 24px;
+
+    padding: 15px;
+  }
+
+}

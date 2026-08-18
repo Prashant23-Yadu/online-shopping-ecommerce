@@ -1,0 +1,48 @@
+.addusers {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.formbox {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.formbox h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #667eea;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5a67d8;
+}

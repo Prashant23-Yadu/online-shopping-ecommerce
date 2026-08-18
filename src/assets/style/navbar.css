@@ -1,0 +1,146 @@
+/* .navbar{
+    .logo{
+        img{
+
+        }
+    }
+    .links{
+        ul{
+            li{
+                a{
+
+                }
+            }
+        }
+    }
+} */
+
+
+
+/* 
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 20px;
+  height: 120PX;
+  background-color: #3db6d7;
+  color: white;
+
+  .logo {
+    img {
+      width: 120px;
+      height: auto;
+      padding-left: 10PX;
+    }
+  }
+
+  .links {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+      li {
+        a {
+          color: #0D1B2A;
+          text-decoration: none;
+          font-weight: bold;
+
+          &:hover {
+            color: #ff9900; 
+          }
+        }
+      }
+    }
+  }
+} */
+
+
+/* NAVBAR WRAPPER */
+.navbar {
+  width: 100%;
+  background: #111827;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* CONTAINER */
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO SECTION */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 45px;
+}
+
+.logo h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/* LINK STYLE */
+.nav-item {
+  text-decoration: none;
+  color: #d1d5db;
+  font-weight: 500;
+  transition: 0.3s ease;
+  padding: 5px 0;
+}
+
+/* HOVER EFFECT */
+.nav-item:hover {
+  color: #f59e0b;
+}
+
+/* ACTIVE LINK */
+.nav-item.active {
+  color: #f59e0b;
+  border-bottom: 2px solid #f59e0b;
+}
+
+/* LOGOUT SPECIAL COLOR */
+.logout {
+  color: #ef4444;
+}
+
+.logout:hover {
+  color: #ff0000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .logo h2 {
+    display: none;
+  }
+}
