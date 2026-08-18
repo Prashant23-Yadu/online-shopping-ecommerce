@@ -99,7 +99,7 @@
 
 import React, { useState } from "react";
 import axios from "axios";
-import "../../assets/style/AddProduct.css";
+import "../../assets/style/addProduct.css";
 
 const AddProduct = () => {
 
