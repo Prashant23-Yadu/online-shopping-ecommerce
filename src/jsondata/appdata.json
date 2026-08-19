@@ -284,22 +284,6 @@
       "password": "54321",
       "dob": "2026-01-01",
       "id": "zW_cqdg7r3s"
-    },
-    {
-      "username": "Kiran",
-      "phone": "1023654789",
-      "email": "kiran@gmail.com",
-      "password": "123456789",
-      "dob": "2024-02-02",
-      "id": "chISYBTQDVE"
-    },
-    {
-      "username": "jay",
-      "phone": "1023654789",
-      "email": "jayprabha@gmail.com",
-      "password": "12345",
-      "dob": "2019-08-22",
-      "id": "eyLSyGotI0c"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
