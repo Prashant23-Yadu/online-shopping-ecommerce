@@ -247,7 +247,7 @@ Example:
 
 ```text
 ### Login Page
-![Login Page](screenshots/login.png)
+![Login Page](src/assets/image1/online-shooping-ecomerse - Google Chrome 8_19_2026 7_28_25 PM.png)
 
 ### User Portal
 ![User Portal](screenshots/user-portal.png)
